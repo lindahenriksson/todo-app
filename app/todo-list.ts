@@ -21,7 +21,27 @@ import {SearchPipe} from "./search-pipe";
 	></todo-item-renderer>
 	</li>
 	</ul>
-	</div>`
+	</div>`,
+	styles: [`
+ 	ul{
+	 	margin: 0;
+    	padding: 0;
+    	list-style: none;
+	 	padding: 10px;
+	 }
+	 li{
+	 	display: block;
+    	padding: 13px 15px;
+    	font-size: 14px;
+    	border-bottom: 1px solid #E7E3E3;
+    	color: #868686;
+	 }
+	 li:first-child{
+	 	border-top: 1px solid #E7E3E3;
+	 }
+
+
+	`],
 
 })
 export class TodoList{

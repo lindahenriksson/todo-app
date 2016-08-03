@@ -6,12 +6,23 @@ import {TodoModel} from "./todo-model";
 	selector: 'todo-input',
 	template: `<div> 
 	<form (submit)="onSubmit()">
-	<input 
+	<input
 		placeholder="Add a new todo"
 		type="text" 
 		[(ngModel)]="todoModel.title">
 	</form>
-	</div>`
+	</div>`,
+	styles: [`
+ 	input{	
+	    width: 100%;
+	    font-size: 20px;
+	    line-height: 1.4em;
+	    padding: 10px;
+	    border: 1px solid #d6bf0c;
+	    border-radius: 50px;
+	 }
+	
+	`],
 
 })
 export class TodoInput{

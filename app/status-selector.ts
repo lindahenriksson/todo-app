@@ -8,7 +8,24 @@ import  {Component, Output, EventEmitter} from "@angular/core";
 	{{status}}
 	</option>
 	</select>
-	</div>`
+	</div>`,
+	styles: [`
+
+ 	select{
+ 		margin: 10px;
+	 	padding: 10px;
+    	border: 1px solid #d6bf0c;
+    	height: 30px;
+	    font-size: 14;
+	    margin-top: 0;
+	    margin-bottom: 0;
+	    color: #d6bf0c;
+	    background-color: #fff;
+	 }
+	 
+	`],
+
+
 })
 
 export class StatusSelector{
